@@ -17,6 +17,7 @@ d3.json(url).then(function(data) {
     function init(){
         // Loading data for sample id 940 as the default sample
         var defaultData = samples_data.samples.filter(sample => sample.id === "940")[0];
+		console.log("Sample id 940 data")
 		console.log(defaultData);
         // Setting default sample_values, otu_ids and otu_labels of the selected test ID
 		otuIdsDefault = defaultData.otu_ids;
